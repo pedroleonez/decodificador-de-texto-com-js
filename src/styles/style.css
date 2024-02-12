@@ -112,9 +112,12 @@ body {
     background-color: #fff;
     border-radius: 16px;
     padding: 20px;
-    display: flex;
+    display: flex; /* quero mudar para 'block' quando tiver conteudo no #resultado */
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
     overflow: auto;
     scrollbar-width: none; /*firefox*/
     margin-right: 40px;
@@ -133,8 +136,7 @@ body {
 
 #menino-olhando {
     width: 250px;
-    margin-top: 35%;
-    display: none;
+    /* display: none; quando tiver conteudo no #resultado */
 }
 
 #alerta-sem-mensagem {
@@ -143,7 +145,7 @@ body {
     text-align: center;
     font-size: 1rem;
     margin-top: 5%;
-    display: none;
+    /* display: none; quando tiver conteudo no #resultado */
 }
 
 #instrucao {
@@ -152,7 +154,7 @@ body {
     text-align: center;
     font-size: 0.75rem;
     margin-top: 5%;
-    display: none;
+    /* display: none; quando tiver conteudo no #resultado */
 }
 
 #copiar {
@@ -160,6 +162,7 @@ body {
     color: #0A3871;
     width: 100%;
     margin-top: 8%;
+    display: none; /* quero mudar quero mudar para 'block' quando tiver conteudo no #resultado */
 }
 
 .rodape {
