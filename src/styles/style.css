@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #F3F5FC;
+}
+
+.cabecalho {
+    display: inline-block;
+    margin: 2% 0 0 3%;
+}
+
+.logo {
+    width: 25px;
+}
+
+.principal {
+    display: flex;
+    justify-content: space-between;
+}
+
+.entrada {
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+    padding: 2% 0% 0% 15%;
+}
+
+#texto {
+    background-color: #F3F5FC;
+    color: #0A3871;
+    border: none;
+    outline: none;
+    resize: none;
+    width: 40vw;
+    height: 55vh;
+    font-family: 'Inter', sans-serif;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    scrollbar-width: none; /*firefox*/
+}
+
+#texto::-webkit-scrollbar {
+    width: 0; /*chrome e edge*/
+}
+
+.alerta-e-botoes {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.alerta {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.alerta img {
+    width: 15px;
+}
+
+.alerta .alerta-texto {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.75rem;
+    color: #495057;
+}
+
+.botoes {
+    display: flex;
+    gap: 24px;
+}
+
+#criptografar,
+#descriptografar,
+#copiar {
+    width: 250px;
+    padding: 15px;
+    border: 1px solid #0A3871;
+    border-radius: 16px;
+    font-size: 13px;
+    font-weight: 400;
+    font-family: 'Inter', sans-serif;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+#criptografar:active,
+#descriptografar:active,
+#copiar:active {
+    transform: translateY(-2px);
+}
+
+#criptografar {
+    background-color: #0A3871;
+    color: #fff;
+}
+
+#descriptografar {
+    background-color: #F3F5FC;
+    color: #0A3871;
+}
+
+#saida {
+    width: 21vw;
+    height: 80vh;
+    background-color: #fff;
+    border-radius: 16px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: auto;
+    scrollbar-width: none; /*firefox*/
+    margin-right: 40px;
+    margin-bottom: 20px;
+}
+
+#saida::-webkit-scrollbar {
+    width: 0; /*chrome e edge*/
+}
+
+#resultado {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 1.25rem;
+}
+
+#menino-olhando {
+    width: 250px;
+    margin-top: 35%;
+    display: none;
+}
+
+#alerta-sem-mensagem {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    text-align: center;
+    font-size: 1rem;
+    margin-top: 5%;
+    display: none;
+}
+
+#instrucao {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    text-align: center;
+    font-size: 0.75rem;
+    margin-top: 5%;
+    display: none;
+}
+
+#copiar {
+    background-color: #fff;
+    color: #0A3871;
+    width: 100%;
+    margin-top: 8%;
+}
+
+.rodape {
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+    width: 100%;
+    background-color: #0A3871;
+}
+
+.rodape__conteudo {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.75rem;
+    color: #fff;
+}
+
+@media (max-width: 900px) {
+    .principal {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .entrada {
+        padding: 2% 0% 0% 2%;
+    }
+
+    #entrada-texto {
+        width: 75vw;
+    }
+
+    #saida {
+        margin: 20px 0;
+        width: 90vw;
+    }
+}
+
+@media (max-width: 550px) {
+    .entrada {
+        justify-content: center;
+    }
+
+    .alerta-e-botoes {
+        justify-content: center;
+    }
+    
+    .botoes {
+        flex-direction: column;
+    }
+}

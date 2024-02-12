@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decodificador de Texto com JS</title>
+    <link rel="stylesheet" href="./src/styles/reset.css">
+    <link rel="stylesheet" href="./src/styles/style.css">
+</head>
+<body>
+    <header class="cabecalho">
+        <img class="logo" src="./src/assets/icons/logo.svg" alt="">
+    </header>
+    
+    <main class="principal">
+        <section class="entrada">
+            <textarea name="entrada" id="texto" placeholder="Digite seu texto"></textarea>
+
+            <div class="alerta-e-botoes">
+                <p class="alerta">
+                    <img src="./src/assets/icons/exclamation.svg" alt="alerta">
+                    <span class="alerta-texto">Apenas letras minúsculas e sem acento.</span>
+                </p>
+                <div class="botoes">
+                    <button onclick="criptografarEAtualizar()" id="criptografar">Criptografar</button>
+                    <button onclick="descriptografarEAtualizar()" id="descriptografar">Descriptografar</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="saida">
+            <p id="resultado"></p>
+            <img id="menino-olhando" src="./src/assets/icons/boy-looking.svg">
+            <p id="alerta-sem-mensagem">Nenhuma mensagem encontrada</p>
+            <p id="instrucao">Digite um texto que você deseja criptografar ou descriptografar.</p>
+            <button onclick="copiarTexto()" id="copiar">Copiar</button>
+        </section>
+    </main>
+    
+    <footer class="rodape">
+        <p class="rodape__conteudo">
+            Feito com <span>&#10084;</span> por Pedro Leonez.
+        </p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
