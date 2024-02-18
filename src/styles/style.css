@@ -117,7 +117,6 @@ body {
     justify-content: center;
     align-content: center;
     align-items: center;
-    flex-wrap: wrap;
     overflow: auto;
     scrollbar-width: none; /*firefox*/
     margin-right: 40px;
@@ -207,6 +206,7 @@ body {
     #saida {
         margin: 20px 0;
         width: 90vw;
+        height: auto;
     }
 }
 

@@ -18,7 +18,7 @@ function descriptografar(texto) {
 
 // Função para verificar se o texto contém apenas letras minúsculas e sem acento
 function contemApenasMinusculasESemAcento(texto) {
-  return /^[a-z]*$/.test(texto);
+  return /^[a-z\s]*$/.test(texto);
 }
 
 // Função para criptografar, alterar os estilos de alguns elementos e atualizar o resultado no HTML
