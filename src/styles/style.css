@@ -177,6 +177,15 @@ body {
     color: #fff;
 }
 
+.rodape__conteudo__link {
+    text-decoration: none;
+    color: #fff;
+}
+
+.rodape__conteudo__link:hover {
+    text-decoration: underline;
+}
+
 @media (max-width: 900px) {
     .principal {
         flex-direction: column;
