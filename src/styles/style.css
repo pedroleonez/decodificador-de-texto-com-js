@@ -122,6 +122,7 @@ body {
     scrollbar-width: none; /*firefox*/
     margin-right: 40px;
     margin-bottom: 20px;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
 }
 
 #saida::-webkit-scrollbar {
@@ -186,8 +187,12 @@ body {
         padding: 2% 0% 0% 2%;
     }
 
-    #entrada-texto {
-        width: 75vw;
+    #texto {
+        width: 80vw;
+    }
+
+    .alerta-e-botoes {
+        align-items: center;
     }
 
     #saida {
