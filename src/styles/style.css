@@ -136,7 +136,6 @@ body {
 
 #menino-olhando {
     width: 250px;
-    /* display: none; quando tiver conteudo no #resultado */
 }
 
 #alerta-sem-mensagem {
@@ -145,7 +144,6 @@ body {
     text-align: center;
     font-size: 1rem;
     margin-top: 5%;
-    /* display: none; quando tiver conteudo no #resultado */
 }
 
 #instrucao {
@@ -154,7 +152,6 @@ body {
     text-align: center;
     font-size: 0.75rem;
     margin-top: 5%;
-    /* display: none; quando tiver conteudo no #resultado */
 }
 
 #copiar {
@@ -162,7 +159,7 @@ body {
     color: #0A3871;
     width: 100%;
     margin-top: 8%;
-    display: none; /* quero mudar quero mudar para 'block' quando tiver conteudo no #resultado */
+    display: none;
 }
 
 .rodape {

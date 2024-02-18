@@ -16,7 +16,7 @@ function descriptografar(texto) {
              .replace(/ufat/g, 'u');
 }
 
-// Função para criptografar e atualizar o resultado no HTML
+// Função para criptografar, alterar os estilos de alguns elementos e atualizar o resultado no HTML
 function criptografarEAtualizar() {
   // Obtém o texto original do textarea
   const textoOriginal = document.getElementById('texto').value;
@@ -26,8 +26,18 @@ function criptografarEAtualizar() {
   
   // Atualiza o elemento HTML com o texto criptografado
   document.getElementById('resultado').textContent = textoCriptografado;
+  
+  // Oculta os elementos e altera os estilos da seção
+  document.getElementById('menino-olhando').style.display = 'none';
+  document.getElementById('alerta-sem-mensagem').style.display = 'none';
+  document.getElementById('instrucao').style.display = 'none';
+  document.getElementById('resultado').style.display = 'block';
+  document.getElementById('copiar').style.display = 'block';
+  document.getElementById('saida').style.justifyContent = 'space-between';
+  document.getElementById('saida').style.alignItems = 'flex-start';
 }
 
+// Função para descriptografar, alterar os estilos de alguns elementos e atualizar o resultado no HTML
 function descriptografarEAtualizar() {
   // Obtém o texto original do textarea
   const textoOriginal = document.getElementById('texto').value;
@@ -37,14 +47,23 @@ function descriptografarEAtualizar() {
   
   // Atualiza o elemento HTML com o texto criptografado
   document.getElementById('resultado').textContent = textoDescriptografado;
+  
+  // Oculta os elementos e altera os estilos da seção
+  document.getElementById('menino-olhando').style.display = 'none';
+  document.getElementById('alerta-sem-mensagem').style.display = 'none';
+  document.getElementById('instrucao').style.display = 'none';
+  document.getElementById('resultado').style.display = 'block';
+  document.getElementById('copiar').style.display = 'block';
+  document.getElementById('saida').style.justifyContent = 'space-between';
+  document.getElementById('saida').style.alignItems = 'flex-start';
 }
 
 // Função para copiar o texto
 function copiarTexto() {
-  let texto = document.getElementById('resultado').innerText;
+  let textoResultado = document.getElementById('resultado').innerText;
 
   if (navigator.clipboard) {
-    navigator.clipboard.writeText(texto)
+    navigator.clipboard.writeText(textoResultado)
       .then(() => console.log('Texto copiado com sucesso!'))
       .catch(err => console.error('Erro ao copiar texto: ', err));
   }
