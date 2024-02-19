@@ -179,9 +179,6 @@ body {
 .rodape__conteudo__link {
     text-decoration: none;
     color: #fff;
-}
-
-.rodape__conteudo__link:hover {
     text-decoration: underline;
 }
 
